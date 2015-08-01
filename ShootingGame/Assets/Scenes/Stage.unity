@@ -87,6 +87,48 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &434778681
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.31536841
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.91648495
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 415206, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &669228543
 Prefab:
   m_ObjectHideFlags: 0
@@ -129,6 +171,56 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 521f1cc32025a14449f38112f5f7e90d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1122341063 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 137328, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
+  m_PrefabInternal: {fileID: 434778681}
+--- !u!1001 &1319207530
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.8599999
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.27999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 409256, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410448, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1122341063}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 036e98a7ce875c8428f714449c9e0b36, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1621438143
 Prefab:
   m_ObjectHideFlags: 0
@@ -138,11 +230,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 423788, guid: 2714a7c652b008445a85682e781be651, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.74000001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 423788, guid: 2714a7c652b008445a85682e781be651, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .600000024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 423788, guid: 2714a7c652b008445a85682e781be651, type: 2}
       propertyPath: m_LocalPosition.z
@@ -166,39 +258,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 423788, guid: 2714a7c652b008445a85682e781be651, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2714a7c652b008445a85682e781be651, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1621438144 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 136590, guid: 2714a7c652b008445a85682e781be651, type: 2}
-  m_PrefabInternal: {fileID: 1621438143}
---- !u!114 &1621438145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621438144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2691531aec71847bbd9be64274bba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &1621438146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621438144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2691531aec71847bbd9be64274bba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1 &2043423483
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,4 +347,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3

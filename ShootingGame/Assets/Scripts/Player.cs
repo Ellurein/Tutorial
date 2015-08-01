@@ -3,20 +3,28 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
+	/*
 	//移動スピード
 	public float speed = 5;
 
 	//PlayerBulletプレハブ
 	public GameObject bullet;
+	*/
+
+	//Spaceshipコンポーネント
+	Spaceship spaceship;
 
 	//Startメソッドをコルーチンとして呼び出す
 	IEnumerator Start()
 	{
+		//Spaceshipコンポーネントを取得
+		spaceship = GetComponent<Spaceship> ();
+
 		while (true) {
 			//弾をプレイヤーと同じ位置/角度で作成
-			Instantiate (bullet, transform.position, transform.rotation);
+			spaceship.Shot(transform);
 			//0.05秒待つ
-			yield return new WaitForSeconds (0.05f);
+			yield return new WaitForSeconds (spaceship.shotDelay);
 		}
 	}
 
@@ -32,6 +40,9 @@ public class Player : MonoBehaviour {
 		Vector2 direction = new Vector2 (x, y).normalized;
 
 		//移動する向きとスピード代入
-		GetComponent<Rigidbody2D>().velocity = direction * speed;
+		//GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+		//移動
+		spaceship.Move (direction);
 	}
 }
