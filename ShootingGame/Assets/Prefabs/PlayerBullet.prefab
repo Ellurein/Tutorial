@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 412568}
   - 50: {fileID: 5009752}
   - 114: {fileID: 11400346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 431156}
   - 212: {fileID: 21277248}
-  m_Layer: 0
+  - 60: {fileID: 6078946}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +43,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 407000}
   - 212: {fileID: 21269194}
-  m_Layer: 0
+  - 60: {fileID: 6043360}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +105,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6043360
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196430}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -.0299999993, y: .0799999982}
+      - {x: -.0332011282, y: -.0169342514}
+      - {x: -.0216006339, y: -.079066731}
+      - {x: .0290667117, y: -.0790667236}
+      - {x: .0332011431, y: -.0181334652}
+      - {x: .0281334668, y: .0809332579}
+--- !u!60 &6078946
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147556}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -.0299999993, y: .0799999982}
+      - {x: -.0332011282, y: -.0169342514}
+      - {x: -.0216006339, y: -.079066731}
+      - {x: .0290667117, y: -.0790667236}
+      - {x: .0332011431, y: -.0181334652}
+      - {x: .0281334668, y: .0809332579}
 --- !u!114 &11400346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 1
 --- !u!212 &21269194
 SpriteRenderer:
   m_ObjectHideFlags: 1

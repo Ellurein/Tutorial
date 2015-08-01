@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414786}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,8 @@ GameObject:
   - 50: {fileID: 5009360}
   - 114: {fileID: 11473054}
   - 114: {fileID: 11410448}
-  m_Layer: 0
+  - 60: {fileID: 6006272}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8599999, y: 3.27999997, z: 1}
+  m_LocalPosition: {x: 2, y: 3.27999997, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 489200}
@@ -132,6 +133,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6006272
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171654}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -.121129751, y: .249434948}
+      - {x: -.231747627, y: .195505857}
+      - {x: -.249143124, y: -.144822836}
+      - {x: -.135243177, y: -.265939713}
+      - {x: .140131712, y: -.263101339}
+      - {x: .240262747, y: -.171484947}
+      - {x: .231747866, y: .172536135}
+      - {x: .126333714, y: .249303579}
 --- !u!95 &9540936
 Animator:
   serializedVersion: 3
@@ -164,6 +186,7 @@ MonoBehaviour:
   shotDelay: .300000012
   bullet: {fileID: 0}
   canShot: 1
+  explosion: {fileID: 132896, guid: 521f1cc32025a14449f38112f5f7e90d, type: 2}
 --- !u!114 &11473054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,6 +243,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 132896, guid: 521f1cc32025a14449f38112f5f7e90d, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 137328, guid: 4b5b85aa397a6b3419b9e285b0b33fc9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171654}

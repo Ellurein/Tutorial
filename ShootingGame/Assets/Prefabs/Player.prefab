@@ -13,7 +13,8 @@ GameObject:
   - 50: {fileID: 5033846}
   - 114: {fileID: 11462140}
   - 114: {fileID: 11477424}
-  m_Layer: 0
+  - 61: {fileID: 6152150}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,6 +49,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &6152150
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136590}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .0500000007, y: .0500000007}
 --- !u!95 &9515260
 Animator:
   serializedVersion: 3
@@ -91,6 +105,7 @@ MonoBehaviour:
   shotDelay: .0500000007
   bullet: {fileID: 104150, guid: 44bf42708e9634645a98de46450db86f, type: 2}
   canShot: 0
+  explosion: {fileID: 132896, guid: 521f1cc32025a14449f38112f5f7e90d, type: 2}
 --- !u!212 &21298604
 SpriteRenderer:
   m_ObjectHideFlags: 1

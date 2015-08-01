@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour {
 		//ローカル座標のY軸のマイナス方向に移動
 		spaceship.Move (transform.up * -1);
 
+		//canShotがfalseの場合、ここでコルーチンを終了させる
 		if (spaceship.canShot == false) {
 			yield break;
 		}
@@ -35,9 +36,23 @@ public class Enemy : MonoBehaviour {
 		}
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnTriggerEnter2D (Collider2D c)
+	{
+		//レイヤー名取得
+		string layerName = LayerMask.LayerToName(c.gameObject.layer);
+
+		//レイヤー名がBullet(Player)以外のとき
+		if( layerName != "Bullet(Player)") return;
+
+		//弾の削除
+		Destroy(c.gameObject);
+
+		//爆発
+		spaceship.Explosion();
+
+		//エネミーの削除
+		Destroy(gameObject);
 	}
+
 }
